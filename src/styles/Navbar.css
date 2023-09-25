@@ -1,7 +1,7 @@
 .navbar {
   width: 100%;
   height: 100px;
-  background-color: #078ff7;
+  background-color: #012d4e;
   display: flex;
   flex-direction: row;
 }
@@ -39,7 +39,7 @@
   cursor: pointer;
 }
 
-.navbar .rightSide svg {
+.navbar .right-side svg {
   font-size: 40px;
 }
 
@@ -54,12 +54,12 @@
   display: inherit;
 }
 
-.navbar #open .hiddenLinks {
+.navbar #open .hidden-links {
   display: inherit;
   margin-left: 30px;
 }
 
-.navbar #close .hiddenLinks {
+.navbar #close .hidden-links {
   display: none;
 }
 
@@ -68,35 +68,35 @@
   margin: 5px;
 }
 @media only screen and (max-width: 900px) {
-  .navbar .rightSide a {
+  .navbar .right-side a {
     width: 70px;
   }
-  .navbar .leftSide {
+  .navbar .left-side {
     padding-left: 50px;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .navbar .rightSide a {
+  .navbar .right-side a {
     display: none;
   }
 
-  .navbar .rightSide {
+  .navbar .right-side {
     justify-content: flex-end;
     padding-right: 50px;
   }
 
-  .navbar .rightSide button {
+  .navbar .right-side button {
     display: inherit;
   }
 }
 
 @media only screen and (min-width: 600px) {
-  .navbar .rightSide button {
+  .navbar .right-side button {
     display: none;
   }
 
-  .hiddenLinks {
+  .hidden-links {
     display: none;
   }
 }
