@@ -8,7 +8,9 @@ function Footer() {
   return (
     <div className="footer">
       <div className="socials">
-        <InstagramIcon /> <TwitterIcon /> <FacebookIcon />
+        <FacebookIcon />
+        <InstagramIcon />
+        <TwitterIcon />
       </div>
       <p>&copy; 2023 manuelpizza.com</p>
     </div>
