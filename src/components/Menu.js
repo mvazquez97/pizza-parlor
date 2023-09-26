@@ -1,5 +1,4 @@
 import React from "react";
-import { pizzas } from "./data/db.json";
 
 function Menu() {
   return (
