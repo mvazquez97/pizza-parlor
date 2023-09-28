@@ -8,7 +8,7 @@ function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
 
   useEffect(() => {
-    fetch("")
+    fetch("http://localhost:3001/pizzas")
       .then((r) => r.json())
       .then(console.log);
   }, []);
