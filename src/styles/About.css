@@ -24,12 +24,15 @@
 
 .about-bottom p {
   width: 1200px;
+  font-size: 25px;
+  color: rgb(0, 26, 255);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .about .about-bottom h1 {
   font-weight: 400;
-  font-size: 70px;
-  color: black;
+  font-size: 100px;
+  color: rgb(255, 0, 0);
   height: 30px;
   display: flex;
   justify-content: center;
