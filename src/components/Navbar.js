@@ -7,12 +7,6 @@ import "../styles/Navbar.css";
 function Navbar() {
   const [showLinks, setShowLinks] = useState(false);
 
-  useEffect(() => {
-    fetch("http://localhost:3001/pizzas")
-      .then((r) => r.json())
-      .then(console.log);
-  }, []);
-
   const toggleLinks = () => {
     setShowLinks(!showLinks);
   };
