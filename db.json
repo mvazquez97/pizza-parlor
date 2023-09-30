@@ -3,21 +3,21 @@
     {
       "id": 1,
       "name": "Margherita",
-      "img": "/images/margherita.jpg",
+      "img": "./images/margherita.jpg",
       "toppings": ["tomato sauce", "mozzarella cheese", "fresh basil"],
       "price": 10.99
     },
     {
       "id": 2,
       "name": "Pepperoni",
-      "img": "/images/Pepperoni_pizza.jpeg",
+      "img": "./images/Pepperoni_pizza.jpeg",
       "toppings": ["tomato sauce", "mozzarella cheese", "pepperoni slices"],
       "price": 12.99
     },
     {
       "id": 3,
       "name": "Vegetarian",
-      "img": "/images/veggie.jpeg",
+      "img": "./images/veggie.jpeg",
       "toppings": [
         "tomato sauce",
         "mozzarella cheese",
@@ -30,14 +30,14 @@
     {
       "id": 4,
       "name": "Hawaiian",
-      "img": "/images/hawaiian.jpg",
+      "img": "./hawaiian.jpg",
       "toppings": ["tomato sauce", "mozzarella cheese", "ham", "pineapple"],
       "price": 13.99
     },
     {
       "id": 5,
       "name": "Vegan",
-      "img": "/images/easy-vegan-pizza.jpeg",
+      "img": "./images/easy-vegan-pizza.jpeg",
       "toppings": [
         "tomato sauce",
         "non-dairy mozzarella cheese",
