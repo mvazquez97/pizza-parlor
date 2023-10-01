@@ -5,10 +5,10 @@ function PizzaCard({ pizza }) {
 
   return (
     <div className="pizza-card">
-      <h2 className="pizza-name">{pizza.name}</h2>
-      <img src={pizza.img} alt={pizza.name} />
-      <p className="pizza-price">{pizza.price}</p>
-      <p className="pizza-toppings"> {pizza.toppings} </p>
+      <h2 className="pizza-name">{name}</h2>
+      <img src={img} alt={name} />
+      <p className="pizza-price">{price}</p>
+      <p className="pizza-toppings">{toppings}</p>
     </div>
   );
 }

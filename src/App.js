@@ -1,5 +1,6 @@
 import "./App.css";
 import React, { useState, useEffect } from "react";
+import ContactUs from "./components/ContactUs";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
@@ -10,7 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   const [pizzas, setPizzas] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3001/pizzas")
+    fetch("http://localhost:3000/pizzas")
       .then((r) => r.json())
       .then(setPizzas);
   }, []);
@@ -25,6 +26,7 @@ function App() {
             <Menu pizzas={pizzas} />
           </Route>
           <Route exact path="/about" component={About}></Route>
+          <Route path="/contact" exact component={ContactUs} />
         </Switch>
         <Footer />
       </Router>
