@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import "../styles/ContactUs.css";
+import contactpizza from "../images/contactpizza.jpg";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -10,7 +12,7 @@ function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/contact", {
+      const response = await fetch("localhost:3000/pizzas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -35,7 +37,10 @@ function ContactUs() {
   };
 
   return (
-    <div>
+    <div
+      className="contact-form-container"
+      style={{ backgroundImage: `url(${contactpizza})` }}
+    >
       <h2>Contact Us</h2>
       <form onSubmit={handleSubmit}>
         <div>
@@ -70,7 +75,9 @@ function ContactUs() {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="btn">
+          Submit
+        </button>
       </form>
     </div>
   );

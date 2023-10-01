@@ -26,7 +26,7 @@ function App() {
             <Menu pizzas={pizzas} />
           </Route>
           <Route exact path="/about" component={About}></Route>
-          <Route path="/contact" exact component={ContactUs} />
+          <Route exact path="/contact" component={ContactUs} />
         </Switch>
         <Footer />
       </Router>
