@@ -41,9 +41,9 @@ function ContactUs() {
       className="contact-form-container"
       style={{ backgroundImage: `url(${contactpizza})` }}
     >
-      <h2>Contact Us</h2>
+      <h2 className="contact-header">Contact Us</h2>
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="name-box">
           <label htmlFor="name">Name:</label>
           <input
             type="text"
@@ -54,7 +54,7 @@ function ContactUs() {
             required
           />
         </div>
-        <div>
+        <div className="email-box">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
@@ -65,7 +65,7 @@ function ContactUs() {
             required
           />
         </div>
-        <div>
+        <div className="message-box">
           <label htmlFor="message">Message:</label>
           <textarea
             id="message"
