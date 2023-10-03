@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   const [pizzas, setPizzas] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/pizzas")
+    fetch("http://localhost:3001/pizzas")
       .then((r) => r.json())
       .then(setPizzas);
   }, []);

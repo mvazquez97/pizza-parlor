@@ -30,7 +30,7 @@
     {
       "id": 4,
       "name": "Hawaiian",
-      "img": "./hawaiian.jpg",
+      "img": "./images/hawaiian.jpg",
       "toppings": ["tomato sauce", "mozzarella cheese", "ham", "pineapple"],
       "price": 13.99
     },

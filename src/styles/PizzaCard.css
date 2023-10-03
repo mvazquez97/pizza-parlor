@@ -1,0 +1,36 @@
+.pizza-container {
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px -5x;
+  transition: 0.1s;
+  animation: ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12vh;
+}
+
+.pizza-container:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px 0px;
+}
+
+.image-container img {
+  overflow: hidden;
+  height: 200px;
+}
+
+.pizza-content {
+  margin: 1rem;
+  margin-top: 0.3rem;
+}
+
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.pizza-price {
+  margin-bottom: 0.5rem;
+}

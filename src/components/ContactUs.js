@@ -12,7 +12,7 @@ function ContactUs() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("localhost:3000/pizzas", {
+      const response = await fetch("localhost:3001/pizzas", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -20,11 +20,10 @@ function ContactUs() {
         body: JSON.stringify(formData),
       });
 
+      // Successfully submit the form
       if (response.ok) {
-        // Successfully submitted the form
-        // Display a success message here
-      } else {
         // Handle errors or display error messages to the user
+      } else {
       }
     } catch (error) {
       console.error("Error submitting the form:", error);
