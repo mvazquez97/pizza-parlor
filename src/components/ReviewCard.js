@@ -1,13 +1,14 @@
 import React from "react";
-import NewReviewForm from "./NewReviewForm";
 
 function ReviewCard({ review }) {
   const { id, name, content } = review;
 
   return (
-    <div className="review-container">
-      <NewReviewForm />
-    </div>
+    <li style={{ marginBottom: "15px" }}>
+      <strong>{name}</strong>
+      <br />
+      {content}
+    </li>
   );
 }
 

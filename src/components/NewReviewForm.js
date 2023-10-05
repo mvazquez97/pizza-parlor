@@ -1,37 +1,37 @@
 import React, { useState } from "react";
 
-function NewReviewForm() {
-  const [reviewData, setReviewData] = useState({
+function NewReviewForm({ onAddNewReview }) {
+  const [formData, setFormData] = useState({
     name: "",
     content: "",
   });
 
   function handleChange(e) {
-    console.log(e.target.value);
-    if (e.target.name === "content") {
-      setReviewData({
-        ...reviewData,
-        [e.target.name]: e.target.value,
-      });
-    } else {
-    }
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
   }
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e) {
     e.preventDefault();
 
     const configObj = {
       method: "POST",
       headers: {
-        "Content-type": "application/json",
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(reviewData),
+      body: JSON.stringify(formData),
     };
 
-    fetch("http://localhost:3001/reviews", configObj);
-    .then(r => r.json())
-    .then(console.log)
-  };
+    fetch("http://localhost:3001/reviews", configObj)
+      .then((r) => r.json())
+      .then((newReview) => onAddNewReview(newReview));
+    setFormData({
+      name: "",
+      content: "",
+    });
+  }
 
   return (
     <form onSubmit={handleSubmit}>
@@ -40,17 +40,17 @@ function NewReviewForm() {
         <input
           type="text"
           name="name"
-          value={reviewData.name}
+          value={formData.name}
           placeholder="Your name"
-          onChange={(e) => setReviewData(e.target.value)}
+          onChange={handleChange}
         />
-        {/* <input
+        <input
           type="text"
           name="content"
-          value={reviewData.content}
+          value={formData.content}
           placeholder="Type your review"
           onChange={handleChange}
-        /> */}
+        />
       </label>
       <button type="submit">Submit</button>
     </form>

@@ -3,45 +3,39 @@
     {
       "id": 1,
       "name": "Margherita",
-      "img": "./images/margherita.jpg",
+      "img": "../assets/margherita.jpg",
       "toppings": "tomato sauce, mozzarella cheese, fresh basil",
       "price": 10.99
     },
     {
       "id": 2,
       "name": "Pepperoni",
-      "img": "./images/Pepperoni_pizza.jpeg",
+      "img": "../assets/Pepperoni_pizza.jpeg",
       "toppings": "tomato sauce, mozzarella cheese, pepperoni slices",
       "price": 12.99
     },
     {
       "id": 3,
       "name": "Vegetarian",
-      "img": "./images/veggie.jpeg",
+      "img": "../assets/veggie.jpeg",
       "toppings": "tomato sauce, mozzarella cheese, bell peppers, onions, mushrooms",
       "price": 11.99
     },
     {
       "id": 4,
       "name": "Hawaiian",
-      "img": "./images/hawaiian.jpg",
-      "toppings": ["tomato sauce", "mozzarella cheese", "ham", "pineapple"],
+      "img": "../assets/hawaiian.jpg",
+      "toppings": "tomato sauce, mozzarella cheese, ham, pineapple",
       "price": 13.99
     },
     {
       "id": 5,
       "name": "Vegan",
-      "img": "./images/easy-vegan-pizza.jpeg",
-      "toppings": [
-        "tomato sauce",
-        "non-dairy mozzarella cheese",
-        "plant based protein",
-        "sauteed veggies"
-      ],
+      "img": "../assets/easy-vegan-pizza.jpeg",
+      "toppings": "tomato sauce, non-dairy mozzarella cheese, plant based protein, sauteed veggies",
       "price": 13.99
     }
   ],
-
   "reviews": [
     {
       "id": 1,

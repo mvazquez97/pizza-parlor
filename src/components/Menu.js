@@ -9,9 +9,9 @@ function Menu({ pizzas }) {
   ));
 
   return (
-    <div className="menu">
+    <div>
       <h1>Our Delicious Menu</h1>
-      <div className="menu-list">{pizzaList}</div>
+      <div className="card-container">{pizzaList}</div>
     </div>
   );
 }

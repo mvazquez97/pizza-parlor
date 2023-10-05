@@ -8,8 +8,6 @@ import Menu from "./components/Menu";
 import About from "./components/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ReviewList from "./components/ReviewList";
-import ReviewCard from "./components/ReviewCard";
-import NewReviewForm from "./components/NewReviewForm";
 
 function App() {
   const [pizzas, setPizzas] = useState([]);
@@ -26,6 +24,10 @@ function App() {
       .then(setReviews);
   }, []);
 
+  function handleNewReviews(newReview) {
+    setReviews([...reviews, newReview]);
+  }
+
   return (
     <div className="App">
       <Router>
@@ -38,7 +40,7 @@ function App() {
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/contact" component={ContactUs} />
           <Route exact path="/reviews" component={ReviewList}>
-            <ReviewList reviews={reviews} />
+            <ReviewList reviews={reviews} onAddNewReview={handleNewReviews} />
           </Route>
         </Switch>
         <Footer />

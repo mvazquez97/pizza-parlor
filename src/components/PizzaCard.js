@@ -5,21 +5,15 @@ function PizzaCard({ pizza }) {
   const { id, img, name, price, toppings } = pizza;
 
   return (
-    <div className="pizza-container">
-      <div className="image-container">
-        <img src={pizza.img} alt={pizza.name} />
-      </div>
+    <div className="card">
+      <img src={img} alt={name} style={{ width: "100%" }} />
 
-      <div className="pizza-content">
-        <div className="pizza-name">
-          <h2>{pizza.name}</h2>
-        </div>
-        <div className="pizza-price">
-          <p>{pizza.price}</p>
-        </div>
-        <div className="pizza-toppings">
-          <p>{pizza.toppings}</p>
-        </div>
+      <div className="container">
+        <h2>{name}</h2>
+
+        <p>{price}</p>
+
+        <p>{toppings}</p>
       </div>
     </div>
   );
