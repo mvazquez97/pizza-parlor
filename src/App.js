@@ -7,6 +7,9 @@ import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import About from "./components/About";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import ReviewList from "./components/ReviewList";
+import ReviewCard from "./components/ReviewCard";
+import NewReviewForm from "./components/NewReviewForm";
 
 function App() {
   const [pizzas, setPizzas] = useState([]);
@@ -15,7 +18,14 @@ function App() {
       .then((r) => r.json())
       .then(setPizzas);
   }, []);
-  console.log(pizzas);
+
+  const [reviews, setReviews] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3001/reviews")
+      .then((r) => r.json())
+      .then(setReviews);
+  }, []);
+
   return (
     <div className="App">
       <Router>
@@ -27,6 +37,9 @@ function App() {
           </Route>
           <Route exact path="/about" component={About}></Route>
           <Route exact path="/contact" component={ContactUs} />
+          <Route exact path="/reviews" component={ReviewList}>
+            <ReviewList reviews={reviews} />
+          </Route>
         </Switch>
         <Footer />
       </Router>
