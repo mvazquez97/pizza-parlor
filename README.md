@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Manuel's Pizza Parlor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Manuel's Pizza Parlor is my take on a pizza restaraunt. At manuelpizza.com you can order a few of your favorite pizzas at a reasonable price. If you are vegan, we offer vegan options as well.
 
-## Available Scripts
+## Overview
 
-In the project directory, you can run:
+- Home: Page with an ORDER NOW! button that redirects to the Menu for viewing.
+- Menu: This is where you will see our list of pizzas along with their toppings.
+- About Us: Story behind the creation of the restaurant.
+- Contact: Here you can submit your info and we will respond as soon as possible.
 
-### `npm start`
+### React tools used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+React is the JavaScript library for building user interfaces. React Router handles the routing within the page. CSS is what I used to style all the pages. The inline styling was mostly used for the background images. JSON server is the restful API for managing data.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### How to view in your environment.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone the repository: https://github.com/your-username/pizza-parlor.git
+2. Run npm install to install dependencies.
+3. Start the server with npm start.
+4. It will be viewable at http://localhost:3000
