@@ -40,12 +40,17 @@
     {
       "id": 1,
       "name": "David",
-      "content": "Very good food"
+      "content": "Very good food."
     },
     {
       "id": 2,
       "name": "Anthony",
       "content": "Food was a little undercooked, especially the dough."
+    },
+    {
+      "name": "Manuel ",
+      "content": "The food was very good.",
+      "id": 3
     }
   ]
 }

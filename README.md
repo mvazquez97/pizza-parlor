@@ -19,3 +19,7 @@ React is the JavaScript library for building user interfaces. React Router handl
 2. Run npm install to install dependencies.
 3. Start the server with npm start.
 4. It will be viewable at http://localhost:3000
+
+### Video
+
+Here is my short video walkthrough: https://www.youtube.com/watch?v=UeAuSFBp89Q
