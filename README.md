@@ -18,7 +18,8 @@ React is the JavaScript library for building user interfaces. React Router handl
 1. Clone the repository: https://github.com/your-username/pizza-parlor.git
 2. Run npm install to install dependencies.
 3. Start the server with npm start.
-4. It will be viewable at http://localhost:3000
+4. Start the json-server with npm run server.
+5. It will be viewable at http://localhost:3000
 
 ### Video
 
